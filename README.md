@@ -1,2 +1,2 @@
 # codingprojects
-All coding assignments from Rutgers and from Pico-8
+All coding projects I have created using Pico-8 (in lua)
