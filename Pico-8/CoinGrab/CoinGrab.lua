@@ -4,6 +4,7 @@
 started=false
 function _init()
 	if(started==true) then
+	music(0)
 	player={
 	sprite=1,
 	x=59,
@@ -31,6 +32,7 @@ function _init()
 	friction=0.85
 	end
 end
+
 function _update()
 	if(started==false) then
 		if(btn(4))then
@@ -49,6 +51,7 @@ function _update()
 		end
 		if(btn(5)) then
 			started=false
+			music(2)
 			_init()
 		end
 	end
@@ -145,6 +148,7 @@ function player_update()
 		player.flip=false
 	end
 	if(btn(2) and player.landed) then
+		sfx(0)
 		player.dy-=player.jump
 		player.landed=false
 	end
@@ -207,6 +211,7 @@ function cointouch(player,coin)
 	local cy=coin.y
 	if((x>cx-8 and x<cx+8) and
 			(y>cy-8 and y<cy+8)) then
+			music(2)
 			coin.touch=true
 			player.landed=true
 			player.falling=true
