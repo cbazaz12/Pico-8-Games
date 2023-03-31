@@ -1,4 +1,5 @@
 --code for AITag game on my Lexaloffle page
+-- Created by Christian Bazaz and Taegon Park
 --https://www.lexaloffle.com/bbs/?uid=73304
 x=32 y=64
 zx=96 zy=64
