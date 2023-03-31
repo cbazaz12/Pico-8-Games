@@ -1,4 +1,5 @@
 --Code for CoinGrab game on my Lexaloffle page
+-- Created by Christian Bazaz and Taegon Park
 --https://www.lexaloffle.com/bbs/?uid=73304
 
 started=false
